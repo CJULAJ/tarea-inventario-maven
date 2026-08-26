@@ -41,6 +41,10 @@ public class PedidoHandler {
     public Map<String, Integer> contarPorCategoria() {
         Map<String, Integer> conteo = new HashMap<>();
         // TODO: recorrer inventario.obtenerTodos() y llenar "conteo".
+        for (Producto p : inventario.obtenerTodos()) {
+            String cat = p.getCategoria();
+            conteo.put(cat, conteo.getOrDefault(cat, 0) + 1);
+        }
         return conteo;
     }
 
