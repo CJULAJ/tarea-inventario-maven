@@ -85,7 +85,9 @@ public class PedidoHandler {
     public Set<String> categoriasDisponibles() {
         Set<String> categorias = new HashSet<>();
         // TODO: agregar la categoria de cada producto a "categorias".
-
+        for (Producto p : inventario.obtenerTodos()) {
+            categorias.add(p.getCategoria());
+        }
         return categorias;
     }
 
