@@ -62,6 +62,11 @@ public class PedidoHandler {
     public List<Producto> productosConStockBajo(int umbral) {
         List<Producto> resultado = new ArrayList<>();
         // TODO: llenar "resultado" filtrando por stock.
+        for (Producto p : inventario.obtenerTodos()) {
+            if (p.getStock() < umbral) {
+                resultado.add(p);
+            }
+        }
 
         return resultado;
     }
