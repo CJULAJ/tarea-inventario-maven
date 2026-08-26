@@ -150,7 +150,9 @@ public class PedidoHandler {
     public double valorTotalInventario() {
         double total = 0.0;
         // TODO: sumar precio * stock de cada producto a "total".
-
+        for (Producto p : inventario.obtenerTodos()) {
+            total += p.getPrecio() * p.getStock();
+        }
         return total;
     }
 
