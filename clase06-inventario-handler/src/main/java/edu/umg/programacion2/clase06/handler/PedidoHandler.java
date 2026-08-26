@@ -130,7 +130,10 @@ public class PedidoHandler {
     public Map<Integer, Producto> indexarPorId() {
         Map<Integer, Producto> indice = new HashMap<>();
         // TODO: llenar "indice" usando producto.getId() como llave.
-
+        for (Producto p : inventario.obtenerTodos()) 
+	        {
+	         indice.put(p.getId(), p);
+	        }
         return indice;
     }
 
