@@ -107,7 +107,11 @@ public class PedidoHandler {
     public Producto productoMasCaro() {
         Producto masCaro = null;
         // TODO: recorrer inventario.obtenerTodos() y actualizar "masCaro".
-
+        for (Producto p : inventario.obtenerTodos()) {
+            if (masCaro == null || p.getPrecio() > masCaro.getPrecio()) {
+                masCaro = p;
+            }
+        }
         return masCaro;
     }
 
