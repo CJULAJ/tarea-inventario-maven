@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>umg.edu.gt.progra2</groupId>
+  <artifactId>clase06.inventario.handler</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Clase 6 - Handler: Inventario + Colecciones</name>
+  <description>Consume clase06.inventario.dependencia y resuelve pedidos usando List, Map y Set.</description>
+
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+    <!-- IMPORTANTE: esta es la UNICA linea que hay que tocar para pasar
+         de la version 1.0.0 de la dependencia a la 1.1.0 (Paso 2 del
+         taller). No hace falta cambiar nada del codigo del handler que
+         ya compilaba con la 1.0.0. -->
+    <inventario.version>1.0.0</inventario.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>umg.edu.gt.progra2</groupId>
+      <artifactId>clase06.inventario.dependencia</artifactId>
+      <version>${inventario.version}</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <mainClass>edu.umg.programacion2.clase06.handler.Main</mainClass>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <mainClass>edu.umg.programacion2.clase06.handler.Main</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
