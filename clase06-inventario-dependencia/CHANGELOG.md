@@ -15,12 +15,8 @@ Formato de versión: `MAJOR.MINOR.PATCH` (versionado semántico / SemVer).
   - `List<Producto> obtenerTodos()`
   - `Producto buscarPorId(int id)`
 
-## [1.1.0] - <<< completar con la fecha de hoy >>>
+## [1.1.0] - 2026-08-25
 
-> TODO (parte del taller): agreguen aquí la entrada correspondiente al
-> método nuevo que le sumaron a `InventarioService` en el "Paso 2" del
-> README del handler. Ejemplo de lo que deberían anotar:
->
-> - Se agregó `___________________` a `InventarioService`.
+> Se agregó `obtenerPorCategoria(String categoria)` a `InventarioService`.
 > - No se modificó ni se eliminó ningún método de la 1.0.0 — por eso es
 >   un cambio MINOR (1.0.0 → 1.1.0) y no MAJOR.
