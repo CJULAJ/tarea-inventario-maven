@@ -56,4 +56,16 @@ public class InventarioService {
         }
         return null;
     }
+    /**
+     * Devuelve los productos pertenecientes a una categoria especifica.
+     */
+    public List<Producto> obtenerPorCategoria(String categoria) {
+        List<Producto> resultado = new ArrayList<>();
+        for (Producto producto : productos) {
+            if (producto.getCategoria().equalsIgnoreCase(categoria)) {
+                resultado.add(producto);
+            }
+        }
+        return resultado;
+    }
 }
