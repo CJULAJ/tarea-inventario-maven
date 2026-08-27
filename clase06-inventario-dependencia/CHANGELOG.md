@@ -16,7 +16,6 @@ Formato de versión: `MAJOR.MINOR.PATCH` (versionado semántico / SemVer).
   - `Producto buscarPorId(int id)`
 
 ## [1.1.0] - 2026-08-25
-
 > Se agregó `obtenerPorCategoria(String categoria)` a `InventarioService`.
 > - No se modificó ni se eliminó ningún método de la 1.0.0 — por eso es
 >   un cambio MINOR (1.0.0 → 1.1.0) y no MAJOR.
