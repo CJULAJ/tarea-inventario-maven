@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>umg.edu.gt.progra2</groupId>
   <artifactId>clase06.inventario.dependencia</artifactId>
-  <version>1.0.0</version>
+  <version>1.1.0</version>
   <name>Clase 6 - Dependencia: Inventario</name>
   <description>Libreria propia (Producto + InventarioService) que clase06-inventario-handler consume como dependencia Maven. Version 1.0.0: API base.</description>
 
