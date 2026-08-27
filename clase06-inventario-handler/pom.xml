@@ -15,7 +15,7 @@
          de la version 1.0.0 de la dependencia a la 1.1.0 (Paso 2 del
          taller). No hace falta cambiar nada del codigo del handler que
          ya compilaba con la 1.0.0. -->
-    <inventario.version>1.0.0</inventario.version>
+    <inventario.version>1.1.0</inventario.version>
   </properties>
 
   <dependencies>
